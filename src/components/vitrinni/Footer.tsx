@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -135,13 +136,13 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-4 md:pt-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-primary-foreground/80 max-w-6xl mx-auto">
           <p>{currentYear} Soluthink Tech - VITRINNI Hub</p>
           <div className="flex gap-3 md:gap-4">
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <Link to="/politica-de-privacidade" className="hover:text-primary-foreground transition-colors">
               Política de Privacidade
-            </a>
+            </Link>
             <span>|</span>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <Link to="/termos-de-uso" className="hover:text-primary-foreground transition-colors">
               Termos de Uso
-            </a>
+            </Link>
           </div>
         </div>
       </div>
