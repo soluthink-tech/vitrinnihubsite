@@ -6,7 +6,8 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 xl:px-6 py-8 xl:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-8">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8 mb-8">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-lg xl:text-xl font-bold">Soluthink Tech</h3>
@@ -99,19 +100,15 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
 
-        {/* Payment Methods */}
-        <div className="border-t border-primary-foreground/20 pt-8 pb-6">
-          <div className="text-center space-y-4">
-            <h3 className="text-base font-semibold text-primary-foreground/90">
-              Formas de Pagamento Aceitas
-            </h3>
-            <div className="flex justify-center">
+          {/* Payment Methods */}
+          <div className="space-y-4">
+            <h3 className="text-lg xl:text-xl font-bold">Formas de Pagamento</h3>
+            <div className="flex items-start">
               <img 
                 src="/images/payment-methods.png" 
                 alt="Formas de pagamento aceitas: Visa, Mastercard, Elo, American Express, Hipercard, Diners Club, Hiper, Aura, JCB, Discover, Pix e Boleto"
-                className="h-16 w-auto opacity-90"
+                className="h-auto w-full max-w-[200px] opacity-90"
               />
             </div>
           </div>
