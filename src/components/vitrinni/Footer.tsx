@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -65,14 +65,6 @@ const Footer = () => {
                   className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
                 >
                   <Instagram className="w-4 h-4 md:w-5 md:h-5" />
-                </a>
-                <a
-                  href="https://www.facebook.com/soluthink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
-                >
-                  <Facebook className="w-4 h-4 md:w-5 md:h-5" />
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCx_G7YqmpGq-wpgcSpfqFMg"
