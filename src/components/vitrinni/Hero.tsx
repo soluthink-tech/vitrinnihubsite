@@ -21,7 +21,7 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold mb-4 md:mb-6 xl:mb-8 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-            <span className="gradient-text block mb-2">VITRINNI Ecosystem</span>
+            <span className="gradient-text block mb-2">VITRINNI Hub</span>
             <span className="text-foreground text-xl md:text-3xl xl:text-5xl block">
               Transforme Suas Vendas
             </span>
@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden border border-border/50 shadow-2xl backdrop-blur-sm bg-card/30 hover:scale-[1.02] transition-transform duration-500">
               <img 
                 src="https://miaoda-site-img.s3cdn.medo.dev/images/fd083574-ba38-4b65-a0fe-b2797834093c.jpg"
-                alt="VITRINNI Ecosystem - Interface moderna"
+                alt="VITRINNI Hub - Interface moderna"
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />

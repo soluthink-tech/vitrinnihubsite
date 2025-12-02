@@ -41,7 +41,7 @@ const Contact = () => {
     <section id="contato" className="py-12 md:py-20 xl:py-32 relative">
       <div className="container mx-auto px-4 md:px-6 xl:px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-16 xl:mb-20">
+        <div className="text-center mb-10 md:mb-16 xl:mb-20 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 border border-primary/20 mb-4 md:mb-6 backdrop-blur-sm">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-secondary" />
             <span className="text-xs md:text-sm font-medium">Comece Agora</span>
@@ -49,7 +49,7 @@ const Contact = () => {
           <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold mb-3 md:mb-4">
             Solicite uma <span className="gradient-text">Demonstração</span>
           </h2>
-          <p className="text-base md:text-lg xl:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-base md:text-lg xl:text-xl text-muted-foreground px-4">
             Descubra como o VITRINNI pode transformar suas vendas
           </p>
         </div>

@@ -47,7 +47,7 @@ const SuccessCases = () => {
             <span className="gradient-text">Cases de Sucesso</span> e Resultados
           </h2>
           <p className="text-base xl:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Veja como o VITRINNI Ecosystem está transformando negócios no segmento de confecção
+            Veja como o VITRINNI Hub está transformando negócios no segmento de confecção
           </p>
         </div>
 

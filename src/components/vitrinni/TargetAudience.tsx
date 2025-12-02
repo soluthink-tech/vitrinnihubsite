@@ -29,7 +29,7 @@ const TargetAudience = () => {
         {/* Section Header */}
         <div className="text-center mb-8 xl:mb-16">
           <h2 className="text-2xl xl:text-4xl font-bold mb-3 xl:mb-4">
-            Para Quem é o <span className="gradient-text">VITRINNI Ecosystem</span>
+            Para Quem é o <span className="gradient-text">VITRINNI Hub</span>
           </h2>
           <p className="text-base xl:text-xl text-muted-foreground max-w-3xl mx-auto">
             Soluções desenvolvidas especialmente para cada perfil do mercado de confecção

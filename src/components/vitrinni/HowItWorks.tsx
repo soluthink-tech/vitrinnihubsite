@@ -42,7 +42,7 @@ const HowItWorks = () => {
             Como Funciona <span className="gradient-text">na Prática</span>
           </h2>
           <p className="text-base xl:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Um processo simples e estruturado para você começar a usar o VITRINNI Ecosystem
+            Um processo simples e estruturado para você começar a usar o VITRINNI Hub
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const HowItWorks = () => {
         <div className="mt-8 xl:mt-12 text-center">
           <p className="text-base xl:text-lg text-muted-foreground max-w-3xl mx-auto">
             Todo o processo é acompanhado pela nossa equipe, garantindo que você 
-            aproveite ao máximo todos os recursos do VITRINNI Ecosystem desde o primeiro dia.
+            aproveite ao máximo todos os recursos do VITRINNI Hub desde o primeiro dia.
           </p>
         </div>
       </div>

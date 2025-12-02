@@ -20,7 +20,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl xl:text-2xl font-bold gradient-text">
-              VITRINNI Ecosystem
+              VITRINNI Hub
             </h1>
           </div>
 
