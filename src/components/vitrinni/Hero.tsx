@@ -14,13 +14,13 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://miaoda-conversation-file.s3cdn.medo.dev/user-7ykv9uq5v08w/conv-7yl5nf8ukzr4/20251203/file-7yvvsfnqlkao.png"
+          src="https://miaoda-site-img.s3cdn.medo.dev/images/a1b37bab-45cb-4eec-94e8-48a1bfead972.jpg"
           alt="Background"
           className="w-full h-full object-cover"
         />
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90" />
+        {/* Overlay for better text readability - lighter for more visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-background/70" />
       </div>
 
       {/* Content */}
@@ -40,7 +40,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-base md:text-xl xl:text-2xl text-foreground/80 dark:text-white/80 mb-6 md:mb-10 xl:mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+          <p className="text-base md:text-xl xl:text-2xl text-foreground/90 dark:text-white/90 mb-6 md:mb-10 xl:mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200 drop-shadow-lg">
             Ecossistema integrado para fabricantes, representantes e multimarcas. 
             <span className="text-foreground dark:text-white font-semibold"> Organize, venda e cresça</span> com tecnologia de ponta.
           </p>
@@ -59,7 +59,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("ecosystem")}
-              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 border-2 border-foreground/20 dark:border-white/30 hover:bg-foreground/10 dark:hover:bg-white/10 backdrop-blur-sm transition-all duration-300 w-full sm:w-auto text-foreground dark:text-white"
+              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 border-2 border-foreground/30 dark:border-white/40 hover:bg-foreground/10 dark:hover:bg-white/10 backdrop-blur-sm transition-all duration-300 w-full sm:w-auto text-foreground dark:text-white shadow-lg"
             >
               Conhecer Soluções
             </Button>
