@@ -44,9 +44,9 @@ const Testimonials = () => {
               className="group relative overflow-hidden border-0 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm hover:shadow-2xl transition-all duration-500"
             >
               <CardContent className="pt-6 md:pt-8 pb-6 md:pb-8">
-                <Quote className="w-8 h-8 md:w-10 md:h-10 text-primary/20 mb-3 md:mb-4" />
+                <Quote className="w-8 h-8 md:w-10 md:h-10 text-primary/30 dark:text-white/30 mb-3 md:mb-4" />
                 
-                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed italic">
+                <p className="text-sm md:text-base text-foreground/80 dark:text-white/90 mb-4 md:mb-6 leading-relaxed italic">
                   "{testimonial.text}"
                 </p>
 
@@ -55,8 +55,8 @@ const Testimonials = () => {
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground text-sm md:text-base">{testimonial.name}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">{testimonial.role} • {testimonial.company}</p>
+                    <p className="font-semibold text-foreground dark:text-white text-sm md:text-base">{testimonial.name}</p>
+                    <p className="text-xs md:text-sm text-foreground/70 dark:text-white/70">{testimonial.role} • {testimonial.company}</p>
                   </div>
                 </div>
               </CardContent>
