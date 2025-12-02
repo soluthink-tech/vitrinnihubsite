@@ -124,16 +124,6 @@ const Contact = () => {
               </Button>
             </form>
           </div>
-
-          {/* Payment Methods */}
-          <div className="mt-12 text-center">
-            <p className="text-sm text-muted-foreground mb-4">Formas de Pagamento Aceitas</p>
-            <img 
-              src="/images/payment-methods.png" 
-              alt="Formas de pagamento aceitas"
-              className="h-12 w-auto mx-auto opacity-70"
-            />
-          </div>
         </div>
       </div>
     </section>

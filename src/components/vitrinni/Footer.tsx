@@ -100,7 +100,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         {/* Payment Methods */}
+        <div className="border-t border-primary-foreground/20 pt-8 pb-6">
+          <div className="text-center space-y-4">
+            <h3 className="text-base font-semibold text-primary-foreground/90">
+              Formas de Pagamento Aceitas
+            </h3>
+            <div className="flex justify-center">
+              <img 
+                src="/images/payment-methods.png" 
+                alt="Formas de pagamento aceitas: Visa, Mastercard, Elo, American Express, Hipercard, Diners Club, Hiper, Aura, JCB, Discover, Pix e Boleto"
+                className="h-16 w-auto opacity-90"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
