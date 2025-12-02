@@ -100,16 +100,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         {/* Payment Methods */}
-        <div className="border-t border-primary-foreground/20 pt-6 mb-6">
-          <h4 className="text-sm font-semibold mb-3">Formas de Pagamento</h4>
-          <img 
-            src="/images/payment-methods.png" 
-            alt="Formas de pagamento aceitas"
-            className="h-12 xl:h-16 w-auto opacity-90"
-          />
-        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">

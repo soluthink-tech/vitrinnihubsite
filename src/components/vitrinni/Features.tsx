@@ -1,13 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   Package, 
-  Users, 
   ShoppingCart, 
   BarChart3, 
   Smartphone, 
-  CheckCircle2,
   Zap,
-  Shield,
   TrendingUp
 } from "lucide-react";
 
@@ -15,98 +11,74 @@ const Features = () => {
   const features = [
     {
       icon: Package,
-      title: "Gestão de Produtos e Coleções",
-      description: "Organize mostruários, produtos e coleções de forma intuitiva"
-    },
-    {
-      icon: Users,
-      title: "Cadastro de Clientes",
-      description: "Gerencie clientes, regiões e informações de forma centralizada"
+      title: "Gestão Completa",
+      description: "Produtos, coleções e mostruários organizados"
     },
     {
       icon: ShoppingCart,
-      title: "Registro de Pedidos",
-      description: "Registre e acompanhe pedidos com agilidade e precisão"
+      title: "Pedidos Ágeis",
+      description: "Registre e acompanhe com precisão"
     },
     {
       icon: BarChart3,
-      title: "Relatórios e Análises",
-      description: "Tenha visão completa das vendas com relatórios detalhados"
+      title: "Relatórios Inteligentes",
+      description: "Visão completa das suas vendas"
     },
     {
       icon: Smartphone,
       title: "Multiplataforma",
-      description: "Acesse de qualquer dispositivo: notebook, tablet ou celular"
-    },
-    {
-      icon: CheckCircle2,
-      title: "Mais Organização",
-      description: "Elimine planilhas e papéis, centralize tudo em um só lugar"
+      description: "Acesse de qualquer dispositivo"
     },
     {
       icon: Zap,
-      title: "Agilidade nas Visitas",
-      description: "Apresente catálogos e feche pedidos com muito mais rapidez"
-    },
-    {
-      icon: Shield,
-      title: "Menos Erros",
-      description: "Reduza erros de digitação e informações desencontradas"
+      title: "Sincronização Real",
+      description: "Dados atualizados instantaneamente"
     },
     {
       icon: TrendingUp,
-      title: "Imagem Profissional",
-      description: "Impressione clientes com apresentação moderna e organizada"
+      title: "Aumente Vendas",
+      description: "Mais produtividade e resultados"
     }
   ];
 
   return (
-    <section id="recursos" className="py-12 xl:py-24 bg-muted/30">
-      <div className="container mx-auto px-4 xl:px-6">
+    <section id="recursos" className="py-16 xl:py-32 relative">
+      <div className="container mx-auto px-4 xl:px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8 xl:mb-16">
-          <h2 className="text-2xl xl:text-4xl font-bold mb-3 xl:mb-4">
-            Principais <span className="gradient-text">Recursos e Benefícios</span>
+        <div className="text-center mb-12 xl:mb-20">
+          <h2 className="text-3xl xl:text-5xl font-bold mb-4">
+            Recursos <span className="gradient-text">Poderosos</span>
           </h2>
-          <p className="text-base xl:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tudo que você precisa para transformar a gestão de vendas do seu negócio
+          <p className="text-lg xl:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Tudo que você precisa para transformar suas vendas
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <Card 
+            <div 
               key={index}
-              className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="group p-6 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 xl:w-12 xl:h-12 rounded-lg bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-5 h-5 xl:w-6 xl:h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-base xl:text-lg font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-sm xl:text-base text-muted-foreground">{feature.description}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+              <p className="text-sm text-muted-foreground">{feature.description}</p>
+            </div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-8 xl:mt-16 text-center">
-          <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-2xl p-6 xl:p-8 border border-border">
-            <h3 className="text-xl xl:text-2xl font-bold mb-3 xl:mb-4">
+        <div className="mt-16 text-center max-w-3xl mx-auto">
+          <div className="p-8 rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-primary/20 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-3">
               Conexão Total Entre Fábrica e Representantes
             </h3>
-            <p className="text-base xl:text-lg text-muted-foreground max-w-3xl mx-auto">
-              O VITRINNI Ecosystem mantém todos conectados e sincronizados. 
-              Quando a fábrica atualiza produtos ou preços, os representantes 
-              recebem as informações instantaneamente. Pedidos registrados pelos 
-              representantes chegam automaticamente na fábrica. Tudo integrado, 
-              tudo em tempo real.
+            <p className="text-muted-foreground">
+              Sincronização automática e em tempo real. Quando a fábrica atualiza, 
+              os representantes recebem instantaneamente. Tudo integrado.
             </p>
           </div>
         </div>
