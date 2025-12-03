@@ -59,7 +59,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("ecosystem")}
-              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 border-2 border-foreground/30 dark:border-white/40 hover:bg-foreground/10 dark:hover:bg-white/10 backdrop-blur-sm transition-all duration-300 w-full sm:w-auto text-foreground dark:text-white shadow-lg"
+              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm transition-all duration-300 w-full sm:w-auto text-white dark:text-white shadow-lg"
             >
               Conhecer Soluções
             </Button>
