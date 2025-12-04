@@ -18,7 +18,7 @@
  * ============================================
  */
 
-export const MAINTENANCE_MODE = false; // ← ALTERE AQUI: true = Em construção | false = Site ativo
+export const MAINTENANCE_MODE = true; // ← ALTERE AQUI: true = Em construção | false = Site ativo
 
 /**
  * Outras configurações do site

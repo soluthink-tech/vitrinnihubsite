@@ -8,7 +8,7 @@ const ComingSoon = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://miaoda-conversation-file.s3cdn.medo.dev/user-7ykv9uq5v08w/conv-7yl5nf8ukzr4/20251203/file-7yvvt3bfqc00.png"
+          src="/images/hero-background.png"
           alt="Background"
           className="w-full h-full object-cover"
         />

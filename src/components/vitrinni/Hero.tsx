@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://miaoda-site-img.s3cdn.medo.dev/images/a1b37bab-45cb-4eec-94e8-48a1bfead972.jpg"
+          src="/images/hero-background.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
