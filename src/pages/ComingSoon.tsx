@@ -69,7 +69,7 @@ const ComingSoon = () => {
             <Button
               variant="outline"
               size="lg"
-              className="gap-2 backdrop-blur-sm border-white/40 hover:bg-white/10 text-white"
+              className="gap-2 border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm transition-all text-white"
               asChild
             >
               <a href={`mailto:${SITE_CONFIG.email}`}>
@@ -80,7 +80,7 @@ const ComingSoon = () => {
             <Button
               variant="outline"
               size="lg"
-              className="gap-2 backdrop-blur-sm border-white/40 hover:bg-white/10 text-white"
+              className="gap-2 border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm transition-all text-white"
               asChild
             >
               <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer">
@@ -99,7 +99,7 @@ const ComingSoon = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="w-12 h-12 rounded-full backdrop-blur-sm border-white/40 hover:bg-white/10 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm hover:scale-110 transition-all duration-300"
                 asChild
               >
                 <a href={SITE_CONFIG.social.instagram} target="_blank" rel="noopener noreferrer">
@@ -109,7 +109,7 @@ const ComingSoon = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="w-12 h-12 rounded-full backdrop-blur-sm border-white/40 hover:bg-white/10 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm hover:scale-110 transition-all duration-300"
                 asChild
               >
                 <a href={SITE_CONFIG.social.youtube} target="_blank" rel="noopener noreferrer">
@@ -119,7 +119,7 @@ const ComingSoon = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="w-12 h-12 rounded-full backdrop-blur-sm border-white/40 hover:bg-white/10 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm hover:scale-110 transition-all duration-300"
                 asChild
               >
                 <a href={SITE_CONFIG.social.linkedin} target="_blank" rel="noopener noreferrer">
