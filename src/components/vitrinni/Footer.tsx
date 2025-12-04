@@ -1,5 +1,6 @@
 import { Instagram, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SITE_CONFIG } from "@/config/siteConfig";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,16 +43,16 @@ const Footer = () => {
               <h3 className="text-base md:text-lg font-bold">Contato</h3>
               <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-primary-foreground/80">
                 <li>
-                  <a href="mailto:contato@soluthinktech.com.br" className="hover:text-primary-foreground transition-colors break-all">
-                    contato@soluthinktech.com.br
+                  <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-primary-foreground transition-colors break-all">
+                    {SITE_CONFIG.email}
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+5511999999999" className="hover:text-primary-foreground transition-colors">
-                    (11) 99999-9999
+                  <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                    {SITE_CONFIG.phone}
                   </a>
                 </li>
-                <li>São Paulo - SP</li>
+                <li>{SITE_CONFIG.location}</li>
               </ul>
             </div>
 
@@ -60,7 +61,7 @@ const Footer = () => {
               <h3 className="text-base md:text-lg font-bold">Redes Sociais</h3>
               <div className="flex gap-3 md:gap-4 justify-center md:justify-start">
                 <a
-                  href="https://www.instagram.com/soluthink/"
+                  href={SITE_CONFIG.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
@@ -68,7 +69,7 @@ const Footer = () => {
                   <Instagram className="w-4 h-4 md:w-5 md:h-5" />
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UCx_G7YqmpGq-wpgcSpfqFMg"
+                  href={SITE_CONFIG.social.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
@@ -76,7 +77,7 @@ const Footer = () => {
                   <Youtube className="w-4 h-4 md:w-5 md:h-5" />
                 </a>
                 <a
-                  href="https://br.linkedin.com/company/soluthink"
+                  href={SITE_CONFIG.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
@@ -134,7 +135,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-4 md:pt-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-primary-foreground/80 max-w-6xl mx-auto">
-          <p>{currentYear} Soluthink Tech - VITRINNI Hub</p>
+          <p>{currentYear} Soluthink Tech - {SITE_CONFIG.name}</p>
           <div className="flex gap-3 md:gap-4">
             <Link to="/politica-de-privacidade" className="hover:text-primary-foreground transition-colors">Política de Privacidade</Link>
             <span>|</span>

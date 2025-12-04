@@ -7,13 +7,20 @@ const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check if user has a theme preference
+    // Check if user has a theme preference, default to light mode
     const theme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     
-    if (theme === "dark" || (!theme && prefersDark)) {
+    // Only set dark mode if explicitly saved as "dark"
+    if (theme === "dark") {
       setIsDark(true);
       document.documentElement.classList.add("dark");
+    } else {
+      // Default to light mode
+      setIsDark(false);
+      document.documentElement.classList.remove("dark");
+      if (!theme) {
+        localStorage.setItem("theme", "light");
+      }
     }
   }, []);
 

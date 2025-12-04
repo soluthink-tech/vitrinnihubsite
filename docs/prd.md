@@ -25,8 +25,7 @@ Site institucional e comercial para apresentação e venda do VITRINNI Ecosystem
 ### 5.1 Hero (Topo da Página)
 - Headline principal destacando o VITRINNI Ecosystem como plataforma completa de gestão de vendas para a indústria de confecção, representantes e multimarcas
 - Subtítulo explicando o benefício geral: organização de coleções, pedidos e clientes, mais agilidade nas vendas e visão unificada do negócio
-- Dois botões de CTA: 'Conhecer o VITRINNI Ecosystem' e 'Solicitar demonstração'
-- Imagem ou ilustração mostrando telas de sistema, catálogos digitais, dashboards de vendas em múltiplos dispositivos (notebook, tablet e celular), representando a integração dos três apps
+- Dois botões de CTA: 'Conhecer o VITRINNI Ecosystem' e 'Solicitar demonstração'\n- Imagem ou ilustração mostrando telas de sistema, catálogos digitais, dashboards de vendas em múltiplos dispositivos (notebook, tablet e celular), representando a integração dos três apps
 
 ### 5.2 O que é o VITRINNI Ecosystem\n- Breve explicação do ecossistema\n- Três blocos destacando cada aplicativo:\n  - **VITRINNI Fábrica**: Para fabricantes de confecção organizarem coleções, produtos, representantes, tabelas de preços e pedidos\n  - **VITRINNI Representante**: Para representantes das fábricas queatendem lojistas, registram pedidos, mostram o catálogo e acompanham suas vendas
   - **VITRINNI Multimarcas**: Para representantes multimarcas que trabalham com diversas marcas simultaneamente, organizando catálogos, clientes e pedidos em um só lugar
@@ -53,7 +52,8 @@ Passo a passo genérico:
 ### 5.6 Cases de Sucesso / Resultados
 - Layout preparado para incluir cases de clientes (fábrica, representante e multimarcas)\n- Estrutura de cada case: nome/segmento do cliente, problema inicial, como o VITRINNI Ecosystem ajudou, resultados obtidos
 - Destaque para segmentos atendidos (moda, calçados, esportes etc.)
-- Implementação: Custom Post Type 'Cases' para facilitar gerenciamento\n
+- Implementação: Custom Post Type 'Cases' para facilitar gerenciamento
+
 ### 5.7 Depoimentos / Provas Sociais
 - Depoimentos de clientes (fábrica, representantes e multimarcas)
 - Estrutura: nome da pessoa, empresa/segmento, comentário sobre a experiência com o VITRINNI Ecosystem\n- Implementação: Custom Post Type 'Depoimentos' ou widget de depoimentos
@@ -68,7 +68,7 @@ Exemplos de perguntas:\n- 'O VITRINNI Ecosystem funciona para qualquer tamanho d
 ### 5.9 Contato Rápido / Demonstração
 - Formulário simples com campos: nome, e-mail, telefone/WhatsApp e mensagem
 - CTA claro: 'Quero uma demonstração do VITRINNI Ecosystem' ou 'Quero saber qual app é ideal para mim'
-- Exibição de formas de pagamento aceitas comícones: Visa, Mastercard, Elo, American Express, Hipercard, Diners Club, Hiper, Aura, JCB, Discover, Pix e Boleto (usar imagem fornecida: image.png)
+- Exibição de formas de pagamento aceitas comícones: Visa, Mastercard,Elo, American Express, Hipercard, Diners Club, Hiper, Aura, JCB, Discover, Pix e Boleto (usar imagem fornecida: image.png)
 - Implementação: Contact Form 7 ou WPForms com validação e integração com e-mail/CRM
 
 ### 5.10 Rodapé Completo
@@ -81,29 +81,82 @@ Exemplos de perguntas:\n- 'O VITRINNI Ecosystem funciona para qualquer tamanho d
 - Links para política de privacidade, termos e outras páginas importantes
 - Implementação: Widget areas customizadas para fácil edição
 
-## 6. Estilo de Design
-- **Visual**: Moderno, limpo e profissional, com identidade de empresa de tecnologia
+## 6. Modo de Construção (Coming Soon)
+
+### 6.1 Objetivo
+Permitir que o site exiba uma página de 'Em Construção' elegante e atrativa enquanto o conteúdo final está sendo preparado, mantendo a identidade visual do projeto e gerando expectativa para o lançamento.
+
+### 6.2 Funcionalidade
+- **Variável de controle**: Criar uma variável booleana no código (PHP ou JavaScript) queativa/desativa o modo de construção
+- **Localização da variável**: \n  - Arquivo: `wp-config.php` ou arquivo de configuração do tema (ex: `functions.php`do tema filho)
+  - Nome sugerido: `SITE_UNDER_CONSTRUCTION`
+  - Valor padrão: `true` (ativa modo construção)
+  - Paraativar o site completo: alterar para `false`
+\n### 6.3 Exemplo de Implementação
+\n**No arquivo wp-config.php (antes da linha 'That's all, stop editing!'):**\n```php
+/**
+ * MODO DE CONSTRUÇÃO\n * Define se o site está em modo 'Em Construção'
+ * true = Exibe página de construção
+ * false = Exibe site completo
+ * \n * IMPORTANTE: Altere para false quando o site estiver pronto para lançamento
+ */
+define('SITE_UNDER_CONSTRUCTION', true);
+```
+
+**No arquivo header.php do tema ou em um plugin customizado:**
+```php
+<?php
+if (defined('SITE_UNDER_CONSTRUCTION') && SITE_UNDER_CONSTRUCTION === true) {
+    // Redireciona para página de construção
+    get_template_part('template-parts/coming-soon');
+    exit;\n}
+?>
+```
+
+### 6.4 Design da Página de Construção
+- **Layout**: Centralizado, minimalista e impactante
+- **Elementos visuais**:
+  - Logo da Soluthink Tech / VITRINNI Ecosystem em destaque
+  - Headline:'Em Breve' ou 'Estamos Preparando Algo Incrível'
+  - Subtítulo: 'O VITRINNI Ecosystem está chegando para transformar a gestão de vendas na indústria de confecção'\n  - Animação sutil (ex: loading spinner, contagem regressiva ou animação de construção)
+  - Ícones das redes sociais (Instagram, Facebook, YouTube, LinkedIn) para manter conexão com o público
+  - Formulário opcional para captura de e-mails interessados em receber notificaçãodo lançamento
+- **Paleta de cores**: Manter identidade visual (azul profundo #1E3A8A, roxo vibrante #7C3AED, verde ciano #06B6D4)\n- **Responsividade**: Totalmente adaptável para desktop, tablet e mobile
+
+### 6.5 Instruções paraAtivação do Site
+1. Acesse o arquivo `wp-config.php` via FTP, cPanel ou painel de hospedagem
+2. Localize a linha com `define('SITE_UNDER_CONSTRUCTION', true);`
+3. Altere `true` para `false`
+4. Salve o arquivo
+5. Limpe o cache do site (plugin de cache e CDN, se houver)
+6. Acesse o site para confirmar que está exibindo o conteúdo completo
+
+### 6.6 Observações Técnicas
+- A página de construção deve ser leve e carregar rapidamente
+- Garantir que mecanismos de busca não indexem a página temporária (meta tag noindex)
+- Manter acesso administrativo ao WordPress funcionando normalmente (wp-admin não deve ser bloqueado)
+\n## 7. Estilo de Design\n- **Visual**: Moderno, limpo e profissional, com identidade de empresa de tecnologia
 - **Elementos gráficos**: Gradientes suaves, formas geométricas, ícones relacionados a software, aplicativos, nuvem, vendas e gestão
 - **Paleta de cores**: Tons tecnológicos como azul profundo (#1E3A8A), roxo vibrante (#7C3AED), verde ciano (#06B6D4) e branco (#FFFFFF), mantendo harmonia com a identidade atual da marca
 - **Tipografia**: Fonte sans-serif moderna e legível (Google Fonts: Inter, Poppins ou Montserrat), com títulos em peso bold que transmitam inovação e confiança
 - **Layout**: Totalmente responsivo para desktop, tablet e mobile, com estrutura em grid e cards para organização visual clara
 - **Interatividade**: Botões com hover suave, transições fluidas entre seções, animações discretas ao scroll (AOS - Animate On Scroll ou similar)
 
-## 7. Requisitos Técnicos WordPress
+## 8. Requisitos Técnicos WordPress
 - **Performance**: Tempo de carregamento inferior a 3 segundos
 - **SEO**: Meta tags otimizadas, URLs amigáveis, schema markup para rich snippets
 - **Segurança**: SSL/HTTPS obrigatório, proteção contra spam em formulários, backups automáticos
-- **Acessibilidade**: Conformidade com WCAG 2.1 nível AA
-- **Analytics**: Integração com Google Analytics e Google Tag Manager
+- **Acessibilidade**: Conformidade com WCAG 2.1 nível AA\n- **Analytics**: Integração com Google Analytics e Google Tag Manager
 - **Manutenibilidade**: Código limpo edocumentado, uso de child theme para customizações
 
-## 8. Imagens Fornecidas
+## 9. Imagens Fornecidas
 - image.png: Ícones de formas de pagamento aceitas (Visa, Mastercard, Elo, American Express, Hipercard, Diners Club, Hiper, Aura, JCB, Discover, Pix e Boleto) - usar nas seções de contato/demonstração e rodapé
 - App Store.png: Ícone da App Store\n- Play Store.png: Ícone da Play Store
-\n## 9. Entregáveis
+\n## 10. Entregáveis
 - Site WordPress completo e funcional
 - Tema customizado ou tema premium configurado
 - Todos os plugins necessários instalados e configurados
+- Página de 'Em Construção' implementada com variável de controle documentada
 - Conteúdo inserido conforme estrutura definida
-- Documentação básica de uso do painel administrativo
+- Documentação básica de usodo painel administrativo e instruções para ativação/desativação do modo de construção
 - Treinamento para equipe de conteúdo (opcional)

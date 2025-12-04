@@ -2,13 +2,38 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import routes from './routes';
+import { MAINTENANCE_MODE } from '@/config/siteConfig';
+import ComingSoon from '@/pages/ComingSoon';
 
 // Uncomment these imports when using miaoda-auth-react for authentication
 // import { AuthProvider, RequireAuth } from 'miaoda-auth-react';
 // import { supabase } from 'supabase-js';
 // import Header from '@/components/common/Header';
 
+/**
+ * ============================================
+ * CONTROLE DE MODO DE MANUTENÇÃO
+ * ============================================
+ * 
+ * O site verifica a variável MAINTENANCE_MODE em: src/config/siteConfig.ts
+ * 
+ * - Se MAINTENANCE_MODE = true  → Exibe página "Em Breve"
+ * - Se MAINTENANCE_MODE = false → Exibe site completo normalmente
+ * 
+ * Para ativar o site após o lançamento:
+ * 1. Abra o arquivo: src/config/siteConfig.ts
+ * 2. Altere MAINTENANCE_MODE de true para false
+ * 3. Salve o arquivo
+ * 
+ * ============================================
+ */
+
 const App: React.FC = () => {
+  // Verifica se o site está em modo de manutenção
+  if (MAINTENANCE_MODE) {
+    return <ComingSoon />;
+  }
+
 {/*
     // USING MIAODA-AUTH-REACT (Uncomment when auth is required):
     // =========================================================
