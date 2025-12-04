@@ -13,8 +13,8 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://miaoda-site-img.s3cdn.medo.dev/images/a1b37bab-45cb-4eec-94e8-48a1bfead972.jpg"
+        <img
+          src="/images/img.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
@@ -39,9 +39,9 @@ const Hero = () => {
               Transforme Suas Vendas
             </span>
           </h1>
-          
+
           <p className="text-base md:text-xl xl:text-2xl text-foreground/90 dark:text-white/90 mb-6 md:mb-10 xl:mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200 drop-shadow-lg">
-            Ecossistema integrado para fabricantes, representantes e multimarcas. 
+            Ecossistema integrado para fabricantes, representantes e multimarcas.
             <span className="text-foreground dark:text-white font-semibold"> Organize, venda e cresça</span> com tecnologia de ponta.
           </p>
 
