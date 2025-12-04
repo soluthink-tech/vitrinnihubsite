@@ -48,7 +48,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  <a href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
                     {SITE_CONFIG.phone}
                   </a>
                 </li>

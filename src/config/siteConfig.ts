@@ -18,7 +18,7 @@
  * ============================================
  */
 
-export const MAINTENANCE_MODE = false; // ← ALTERE AQUI: true = Em construção | false = Site ativo
+export const MAINTENANCE_MODE = true; // ← ALTERE AQUI: true = Em construção | false = Site ativo
 
 /**
  * Outras configurações do site
@@ -29,6 +29,7 @@ export const SITE_CONFIG = {
   description: "Ecossistema integrado para fabricantes, representantes e multimarcas",
   email: "contato@vitrinnihub.com.br",
   phone: "(34) 99116-7998",
+  whatsappNumber: "5534991167998", // Número formatado para WhatsApp (código do país + DDD + número)
   location: "MG - Brasil",
   social: {
     instagram: "https://www.instagram.com/soluthink/",

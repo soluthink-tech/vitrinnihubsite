@@ -83,7 +83,7 @@ const ComingSoon = () => {
               className="gap-2 border-2 border-primary/50 dark:border-white/40 bg-primary/90 dark:bg-transparent hover:bg-primary dark:hover:bg-white/10 backdrop-blur-sm transition-all text-white"
               asChild
             >
-              <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`} target="_blank" rel="noopener noreferrer">
                 <Phone className="w-4 h-4" />
                 {SITE_CONFIG.phone}
               </a>
